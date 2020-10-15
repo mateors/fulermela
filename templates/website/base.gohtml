@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ফুলের মেলা জাতীয় শিশু সংগঠন</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {{block "link" .}}
+    
+            <!--====>> Favicon icon CSS <<====-->
+            <link href="./resources/img/favicon/favicon.ico" type="image/x-icon" rel="shortcut icon" >
+            
+            <!--====>> Bootstrap V3 CSS <<====-->
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        
+            <!--====>> Google fonts CSS <<====-->
+            <!--    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">-->
+            
+            <!--====>> Material design icons CSS <<====-->
+            <link href="https://cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.min.css" rel="stylesheet">
+        
+            <!--====>> Slick Slider CSS <<====-->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" type="text/css" rel="stylesheet" />
+        
+            <!-- Custom select -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        
+            <!-- Data picker -->
+            <link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" type="text/css" rel="stylesheet" />
+            
+            <!--====>> Feather light CSS <<====-->
+            <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+        
+            <!--====>> Index CSS <<====-->
+            <link href="./resources/css/index.css" type="text/css" rel="stylesheet" />
+
+        {{end}}
+
+        {{block "style" .}}
+            <style>
+                @font-face { font-family: "Shorif Shishir Unicode",cursive; src: url('"./resources/css/ShorifShishirUnicode.ttf'); } 
+                .test1 {
+                    color:orange;
+                font-family: "Shorif Shishir Unicode";
+                font-size: 48px;
+                filter: drop-shadow(5px 2px 2px #000);
+                }
+            
+            @font-face { font-family: "SolaimanLipi",cursive; src: url('./resources/css/SolaimanLipi.ttf'); } 
+            
+            .text-1 {
+                color:#fff;
+                font-family: "SolaimanLipi";
+                font-size: 22px;
+            }
+
+            .text-1 a{
+                color:#fff;
+                font-family: "SolaimanLipi";
+                font-size: 22px;
+            }
+            
+            .text-1 p{
+                margin-left: 65px;
+                text-align: justify;
+                color:#fff;
+                font-family: "SolaimanLipi";
+                font-size: 22px;
+                text-indent: -22px;
+            }
+
+            .text-header-1 {
+                color:#fff;
+                font-family: "Shorif Shishir Unicode";
+                font-size: 40px;
+                filter: drop-shadow(5px 2px 2px #000);
+            }
+            .text-2 {
+                margin-top:10px;
+                font-family: "SolaimanLipi";
+                font-size: 32px;
+            }
+            .text-2 a{
+                text-decoration:none;
+            }
+            .text-3 {
+                    color:#fff;
+                font-family: "Shorif Shishir Unicode";
+                font-size: 48px;
+                filter: drop-shadow(5px 2px 2px #000);
+                }
+            </style>
+        {{end}}
+
+    </head>
+
+    <body class="home">
+        <!-- Begin preloader -->
+        <div class="preloader-container">
+          <div class="dash dash-one"></div>
+          <div class="dash dash-two"></div>
+          <div class="dash dash-three"></div>
+          <div class="dash dash-four"></div>
+        </div>
+        <!-- End preloader -->
+
+
+        <!-- Begin header -->
+        
+            <header>
+
+                <!-- Begin header top info -->
+                {{block "header_top" .}}
+                <div class="header-top-info">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="top-info">
+                                    <p>সবাইকে ফুলেল শুভেচ্ছা ফুলের মেলা শিশু অংগনে!</p>
+                                    <ul class="soc-list">
+                                        <li>
+                                            <a href="#" title="Google Plus" target="_blank">
+                                                <i class="mdi mdi-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Facebook" target="_blank">
+                                                <i class="mdi mdi-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Twiter" target="_blank">
+                                                <i class="mdi mdi-twitter"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+                <!-- End header top info -->
+
+                <!-- Begin header main info -->
+                {{block "header_container" .}}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="main-header">
+                                <!-- Begin main header info -->
+                                <div class="main-header-info">
+                                    <div class="show-search"><i class="mdi mdi-magnify"></i></div>
+                                    <a href="index.html" class="logo"><img src="./resources/img/logo.png" alt="logo"></a>
+                                    <div class="humburger"><span></span><span></span><span></span></div>
+                                </div>
+                                <!-- End main header info -->
+
+                            
+
+                                    <!-- Begin sidebar search -->
+                                    <form action="#" class="sidebar-search">
+                                        <input type="search" name="header-search" placeholder="Search...">
+                                        <button type="submit" class="color-4"><i class="mdi mdi-magnify"></i></button>
+                                    </form>
+                                    <!-- End sidebar search -->
+                                </div>
+                                <!-- End inner header -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+                <!-- Begin header main info -->
+
+                <!-- Begin header menu -->
+                {{block "header_menu" .}}
+                <nav class="header-nav">
+                    <div class="close-menu"><i class="mdi mdi-close"></i></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="header-nav-list">
+                                    <li class="color-1"><a href="index.html" class="active">প্রচ্ছদ</a></li>
+                                    <li class="color-2">
+                                        <div class="wrap-to-show">
+                                            <p>পরিচিতি</p>
+                                            <i class="mdi mdi-chevron-down"></i>
+                                        </div>
+                                        <ul class="hide-lvl">
+                                            <li><a href="pages/prospectus.html">আমাদের পরিচিতি</a></li>
+                                            <li><a href="pages/history.html">ইতিহাস</a></li>
+                                            <li><a href="pages/ideal_objective.html">আদর্শ ও উদ্দেশ্য</a></li>
+                                            <li><a href="pages/keyword_slogan.html">মূলমন্ত্র ও শ্লোগান</a></li>
+                                            <li><a href="pages/activities.html">কর্মসূচী</a></li>
+                                            <li><a href="pages/themesong.html">ফুলের মেলার গান</a></li>
+                                            <li><a href="pages/monogram.html">প্রতীক</a></li>
+                                            <li><a href="pages/dresscode.html">পোশাক</a></li>
+                                            <li><a href="pages/regno.html">জাতীয় রেজিস্ট্রেশন নাম্বার</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="color-3">
+                                        <div class="wrap-to-show">
+                                            <a href="pages/classes.html">মেলা সংবাদ</a>
+                                            <i class="mdi mdi-chevron-down"></i>
+                                        </div>
+                                        <ul class="hide-lvl">
+                                            <li><a href="pages/education.html">শিক্ষা-সাহিত্য</a></li>
+                                            <li><a href="pages/cultural.html">সংস্কৃতি</a></li>
+                                            <li><a href="pages/art_science.html">শিল্প-বিজ্ঞান</a></li>
+                                            <li><a href="pages/family.html">পরিবার</a></li>
+                                            <li><a href="pages/socialservice.html">সমাজসেবা</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="color-4">
+                                        <div class="wrap-to-show">
+                                            <a href="pages/magazines.html">প্রকাশনা</a>
+                                            <i class="pages/mdi mdi-chevron-down"></i>
+                                        </div>
+                                        <ul class="hide-lvl">
+                                            <li><a href="pages/constitution.html">সংবিধান</a></li>
+                                            <li><a href="pages/our_works.html">আমাদের কাজ</a></li>
+                                            <li><a href="pages/my_daily_routine.html">আমার প্রতিদিন</a></li>
+                                            <li><a href="pages/calender.html">ক্যালেন্ডার</a></li>
+                                            <li><a href="pages/routine_card.html">রুটিন কার্ড</a></li>
+                                            <li><a href="pages/eid_card.html">ঈদ কার্ড</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="color-1  drop-right">
+                                        <div class="wrap-to-show">
+                                            <p class="active">বিশেষ আয়োজন</p>
+                                            <i class="mdi mdi-chevron-down"></i>
+                                        </div>
+                                        <ul class="hide-lvl">
+                                            <li>
+                                                <div class="wrap-to-show">
+                                                    <p>দিবস ভিত্তিক আয়োজন</p>
+                                                    <i class="mdi mdi-chevron-down"></i>
+                                                </div>
+                                                <ul class="hide-lvl">
+                                                    <li><a href="pages/vasadibos.html">ভাষা দিবস</a></li>
+                                                    <li><a href="pages/maheramadan.html">মাহে রমজান</a></li>
+                                                    <li><a href="pages/konnashishu.html">কন্যা শিশু দিবস</a></li>
+                                                    <li><a href="pages/anniversary.html">প্রতিষ্ঠা বার্ষিকী</a></li>
+                                                    <li><a href="pages/worldchildrenday.html">বিশ্ব শিশু দিবস</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="pages/competition_prize.html">প্রতিযোগিতা ও পুরস্কার</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                    <li class="color-5 drop-right">
+                                        <div class="wrap-to-show">
+                                            <a href="pages/nijkegori.html">নিজকে গড়ি</a>
+                                            <i class="mdi mdi-chevron-down"></i>
+                                        </div>
+                                        <ul class="hide-lvl">
+                                            <li><a href="pages/learningdua.html">দোয়া শিখি</a></li>
+                                            <li><a href="pages/quranicstory.html">কুরআনের গল্প</a></li>
+                                            <li><a href="pages/hadithstory.html">হাদীসের গল্প</a></li>
+                                            <li><a href="pages/cartoonstory.html">কার্টুন গল্প</a></li>
+                                            <li><a href="pages/audio.html">অডিও</a></li>
+                                            <li><a href="pages/video.html">ভিডিও</a></li>
+                                            <li><a href="pages/presentation.html">প্রেজেন্টশন</a></li>
+                                            <li><a href="pages/library.html">পাঠাগার</a></li>
+
+                                        </ul>
+                                    </li>
+                                
+                                    <li class="color-2 drop-right">
+                                        <div class="wrap-to-show">
+                                            <a href="#">তোমাদের পাতা</a>
+                                            <i class="mdi mdi-chevron-down"></i>
+                                        </div>
+                                        <ul class="hide-lvl">
+                                            <li><a href="pages/poems.html">ছড়া / কবিতা</a></li>
+                                            <li><a href="pages/stories.html">গল্প</a></li>
+                                            <li><a href="pages/arts.html">তোমাদের আঁকা</a></li>
+                                            <li><a href="pages/arts&science.html">শিল্প-বিজ্ঞান প্রজেক্ট</a></li>
+                                            <li><a href="pages/handycrafts.html">হস্তশিল্প</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="color-3 drop-right">
+                                        <div class="wrap-to-show">
+                                            <a href="#">ই-ম্যাগাজিন</a>
+                                            <i class="mdi mdi-chevron-down"></i>
+                                        </div>
+                                        <ul class="hide-lvl">
+                                            <li><a href="pages/fm2019.html">২০১৯</a></li>
+                                            <li><a href="pages/fm2018.html">২০১৮</a></li>
+                                            <li><a href="pages/fm2017.html">২০১৭</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                {{end}}
+                <!-- End header menu -->
+
+                <!-- Begin search overlay -->
+                <div class="search-overlay-wrap color-1">
+                    <div class="close-search-overlay"><i class="mdi mdi-close"></i></div>
+                    <form action="#" class="search-overlay">
+                        <input type="search" name="overlay-search" placeholder="Search...">
+                        <button type="submit"><i class="mdi mdi-magnify"></i></button>
+                    </form>
+                </div>
+                <!-- End search overlay -->
+            
+            </header>
+
+        <!-- End header -->
+
+
+        {{block "content" .}}
+
+            <!-- Begin home slider -->
+            <section class="home-slider-wrap color-3">
+                <div class="home-slider" id="home-slider">
+                    <div class="card">
+                        <img src="./resources/img/home-slide_img.jpg" class="home-slider-bg" alt="./resources/img">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="inner-home-slider">
+                                        <div class="home-slider-desc">
+                                            <div class="home-slider-text">
+                                                <p class="test1">ছড়িয়ে দেবো সুবাস <br>মোরা
+                                                    সবার আঙিনায়</p>
+                                                
+                                            </div>
+                                            <img src="./resources/img/buterfly-2.png" class="slider-mini-img one" alt="buterfly">
+                                            <img src="./resources/img/bee.png" class="slider-mini-img two" alt="bee">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="inner-home-slider">
+                                        <div class="home-slider-desc">
+                                            <div class="home-slider-text">
+                                                <p class="text-3">আল্লাহর নামে পড়ি
+                                                    <br>নিজেকে নিজে গড়ি</p>
+                                                
+                                            </div>
+                                            <img src="./resources/img/star.png" class="slider-mini-img one" alt="buterfly">
+                                            <img src="./resources/img/book.png" class="slider-mini-img two" alt="bee">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./resources/img/home-slide_img-2.jpg" class="home-slider-bg" alt="./resources/img">
+                    </div>
+                </div>
+                <a href="#" class="slider-arrow arrow-left"><i class="mdi mdi-chevron-left"></i></a>
+                <a href="#" class="slider-arrow arrow-right"><i class="mdi mdi-chevron-right"></i></a>
+            </section>
+            <!-- End home slider -->
+
+
+            <!-- Begin home content -->
+            <main class="home-content">
+                <section class="home-preview">
+                    <div class="container">
+                        <!-- Begin advantages list -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="advantages-list">
+                                    <li>
+                                        <div class="advantages-ico color-2">
+                                            <img src="./resources/img/paper-plane.png" alt="paper-plane">
+                                            
+                                        </div>
+                                        <div class="advantages-desc">
+                                            <h4 class="text-2"><a href="pages/cp_message.html" target="_blank">পরিচালিকার কথা</a></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="advantages-ico color-4">
+                                            <img src="./resources/img/baby-food.png" alt="baby-food">
+                                        </div>
+                                        <div class="advantages-desc">
+                                            <h4 class="text-2"><a href="pages/greeting_message.html" target="_blank">শুভেচ্ছা কথা</a></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="advantages-ico color-3">
+                                            <img src="./resources/img/medical.png" alt="healthcorner">
+                                        </div>
+                                        <div class="advantages-desc">
+                                            <h4 class="text-2">
+                                                <a href="pages/healthcorner.html" target="_blank"> স্বাস্থ্য কর্ণার </a></h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End advantages list -->
+            
+                        <!-- Begin home preview main -->
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="preview-card">
+                                    <div class="preview-card-logo">
+                                        <a href="#"><img src="./resources/img/about-prev.png" alt="আমাদের কথা"></a>
+                                    </div>
+                                    <div class="preview-card-desc">
+                                        <a href="#" class="h2">আমাদের কথা</a>
+                                        <p align="justify" style="margin-top: -30px;">ফুল মানে অযুত সম্ভাবনা।  ফুলের মেলা মানেই সুন্দরের বাগান। অনেক রং অনেক সম্ভাবনার সমাবেশ। নানা রকম সৌরভের ঝর্ণাধারা। প্রতিটি শিশুই যেন একেকটি ফুলের মত। এই শিশুরাই একদিন জ্ঞানের আলোয় চারপাশ ভরিয়ে তুলবে। তাদের চারিত্রিক  সুবাসে মুখরিত হবে চারদিক। যেমন অনেক অনেক ফুলের সৌরভে ভরপুর থাকে একটি বাগান। এ ধারণাকে সামনে রেখেই আমাদের প্রিয় সংগঠনের নাম ফুলের মেলা।<br>
+                                            
+                                            শিশু সংগঠনে শিশু সংগঠকের ভূমিকা অত্যন্ত গুরুত্বপূর্ণ। শিশুদের উৎসাহিত করতে হবে ভাল চিন্তায়, ভাল কাজে, নিয়মিত লেখাপড়া করায় এবং শৃঙ্খলাবদ্ধ জীবন যাপনে। একাত্ম করে তুলতে হবে ফুলের মেলার পাঁচ দফা কর্মসূচীর সাথে।আগামীর কারিগরদের একটি সুন্দর শৈশব উপহার দিতে  ফুলের মেলা বদ্ধ পরিকর।</p>
+                                        <!--<a href="#" class="button color-2">Details</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="preview-card">
+                                    <div class="preview-card-logo">
+                                        <img src="./resources/img/ideal&goal.png" alt="আদর্শ ও উদ্দেশ্য">
+                                    </div>
+                                    <div class="preview-card-desc">
+                                        <h2>আদর্শ ও উদ্দেশ্য </h2>
+                                        <p style="margin-top: -20px;">আদর্শ ও শিক্ষা, চরিত্র, একতা, স্বাস্থ্য সেবামূলক কর্মসূচির মাধ্যমে শিশুদের নীতিনিষ্ঠ পরিশ্রমপ্রিয় ও দেশপ্রেমিক নাগরিক হিসেবে গড়ে তোলা।</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="schedule color-2">
+                                    <h2 class="text-header-1">নোটিশ বোর্ড</h2>
+                                    
+                                    <marquee behavior="scroll" direction="up" scrollamount="1"  class="text-1" >
+                                        
+                                            <p><a href="https://www.facebook.com/fulermelabd" >১. আগামী ১২ অক্টোবর বিকাল ৩.০০টায় ফুলের মেলার ফেইসবুক পেইজে সম্প্রচারিত হবে প্রতিষ্ঠা বার্ষিকী উপলক্ষ্যে শিশুদের নিয়ে লাইভ অনুষ্ঠান।</a></p>
+                                            <p><a href="#">২. ফুলের মেলার অনুভূতি চিঠি লেখা প্রতিযোগিতা জমা দেয়ার শেষ তারিখ ২৮.১০.২০</a></p>
+                                        
+                                </marquee>
+                                <p>&nbsp;</p>
+                                    <a href="notice.html" class="button color-4">সকল নোটিশ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End home preview main -->
+                    </div>
+                </section>
+                
+                <!-- Begin home action -->
+                <section class="action-wrap color-3" data-parent-move='true'>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="action">
+                                    <div class="action-desc">
+                                        <a href="#" class="text-header-1">আমাদের</a>
+                                        <h4  class="text-header-1">কর্মসূচী</h4>
+                                    
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="action">
+                                    <div class="action-desc">
+                                        <img src="./resources/img/activities.png" alt="কর্মসূচী" width="100%">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./resources/img/ballon_1.png" class="moving-element one" alt="baloon" data-move='plus' data-move-speed='25'>
+                    <img src="./resources/img/ballon_2.png" class="moving-element two" alt="baloon" data-move='plus' data-move-speed='45'>
+                    <!--<img src="./resources/img/little_boy.png" class="action-bg" alt="little_boy">-->
+                </section>
+                <!-- End home action -->
+            
+                
+
+            </main>
+            <!-- End home content -->
+
+        {{end}}
+
+
+        <!-- Begin footer -->
+        {{block "footer" .}}
+            <footer class="footer-type-4">
+                <!-- Begin footer top content -->
+                <div class="footer-top-content">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Begin footer tools -->
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="footer-tools">
+                                    <a href="index.html" class="footer-logo"><img src="./resources/img/logo-white.png" alt="logo"></a>
+                                    
+                                    <!--<form action="#" class="footer-subscribe">
+                                        <input type="email" name="subscribe" placeholder="E-mail...">
+                                        <button type="submit">
+                                            <i class="mdi mdi-telegram"></i>
+                                        </button>
+                                    </form>-->
+                                    <ul class="soc-list">
+                                        <li>
+                                            <a href="#" title="Facebook" target="_blank">
+                                                <i class="mdi mdi-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Youtube" target="_blank">
+                                                <i class="mdi mdi-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Twiter" target="_blank">
+                                                <i class="mdi mdi-twitter"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" title="Google Plus" target="_blank">
+                                                <i class="mdi mdi-google-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="footer-contact-text">
+                                        <br>
+                                        <h3 style="color:#fff; font-weight: 900; font-size: 30px; text-align: center;">আর্থিক অনুদান</h3>
+                                        <a> <img src="./resources/img/donation_card.png" width="80%"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End footer tools -->
+            
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <!-- Begin footer latest -->
+                                <div class="footer-latest">
+                                    <div class="sidebar-latest" >
+                                        <h3 class="color-2" style="color:#fff; font-weight: 900; font-size: 30px;">তথ্য কর্ণার</h3>
+                                        <ul style="color:#fff; font-size: 22px;">  <li><a href="http://www.mowca.gov.bd/" target="_blank">মহিলা ও শিশু বিষয়ক মন্ত্রনালয়</a></li>
+                                            <li><a href="http://www.mopme.gov.bd/" target="_blank">প্রাথমিক ও গণশিক্ষা মন্ত্রনালয়</a></li>
+                                            <li><a href="https://shishuacademy.gov.bd/" target="_blank">বাংলাদেশ শিশু একাডেমী</a></li>
+                                            <li><a href="javascript:" target="_blank">বাংলাদেশ শিশু কল্যাণ পরিষদ (বাশিকপ)</a></li>
+                                            <li><a href="http://bsafchild.net/" target="_blank">শিশু অধিকার ফোরাম</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End footer latest -->
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <!-- Begin footer latest -->
+                                <div class="footer-latest">
+                                    <div class="sidebar-latest">
+                                        <h3 class="color-2" style="color:#fff; font-weight: 900; font-size: 30px;">ফুলের মেলার সদস্য</h3>
+                                        <ul style="color:#fff; font-size: 22px;">  
+                                            <li><a href="#" target="_blank">সদস্য ফরম</a></li>
+                                            <li><a href="#" target="_blank">সদস্য হওয়ার নিয়মাবলি</a></li>
+                                            <li><a href="#" target="_blank">সদস্য শপথ</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End footer latest -->
+                            </div>
+            
+                            <!-- Begin footer contact -->
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="footer-contact">
+                                    <h3 style="color:#fff; font-weight: 900; font-size: 30px;">আমাদের ঠিকানা</h3>
+                                    <ul >
+                                        <li>
+                                            <i class="mdi mdi-map-marker"></i>
+                                            <div class="footer-contact-text">
+                                                <a style="color:#fff; font-size: 22px;">
+                                                    এ. এফ টাওয়ার<br> ৯১/বি এলিফ্যান্ট রোড<br>
+                                                    বড় মগবাজার, ঢাকা-১২১৭</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-phone"></i>
+                                            <div class="footer-contact-text">
+                                                <a style="color:#fff; font-size: 24px;" href="tel:+০২ ৮৩৩২২১৯">+০২ ৮৩৩২২১৯</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-email-open-outline"></i>
+                                            <div class="footer-contact-text">
+                                                <a style="color:#fff; font-size: 18px;" href="mailto:info@fulermela.org">info@fulermela.org</a>
+                                                <a style="color:#fff; font-size: 18px;" href="mailto:fulermela1210@gmail.com">fulermela1210@gmail.com</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End footer contact -->
+            
+                            </div>
+                    </div>
+                </div>
+                <!-- End footer top content -->
+                
+                <!-- Begin footer bottom content -->
+                <div class="footer-bottom-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>স্বত্বাধিকারে © ২০২০ <a href="https://fulermela.org" target="_blank">ফুলের মেলা</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End footer bottom content -->
+            </footer>
+        {{end}}
+        <!-- End footer -->
+
+
+        <div class="fade-bg"></div>
+        <p class="back-top color-4" id="toTop"><i class="mdi mdi-chevron-up"></i></p>
+
+        {{block "footer_script" .}}
+            <!-- ===> Juery 3.2.1 JS <==== -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            
+            <!-- ===> Bootstrap 3 JS <==== -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            
+            <!-- Pie Chart JS -->
+            <script src="./resources/libs/progress/jquery.easypiechart.min.js"></script>
+            
+            <!-- ===> Slick slider JS <==== -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+            
+            <!-- ===> Feather Light JS <==== -->
+            <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
+            
+            <!-- Custom select -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+            
+            <!-- Data picker -->
+            <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+            
+            <!-- Google Map js -->
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuHS2And3EtzpWBoMSqCIIiJzAEynp5ms&callback=initMap"></script>
+            
+            <!-- ===> Common JS <==== -->
+            <script src="./resources/js/common.js"></script>
+        {{end}}
+
+    </body>
+
+</html>
